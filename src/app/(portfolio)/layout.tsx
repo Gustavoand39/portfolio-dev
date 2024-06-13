@@ -1,4 +1,4 @@
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 
 export default function Layout({children}: {children: React.ReactNode}) {
   return (
@@ -6,6 +6,8 @@ export default function Layout({children}: {children: React.ReactNode}) {
       <Header />
 
       {children}
+
+      <Footer />
     </main>
   );
 }

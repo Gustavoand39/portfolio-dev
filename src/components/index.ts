@@ -16,3 +16,5 @@ export * from "./timeline/TimelineDate"
 
 export * from "./skills/SkillList"
 export * from "./skills/SkillItem"
+
+export * from "./ui/footer/Footer"
