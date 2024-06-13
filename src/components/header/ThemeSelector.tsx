@@ -1,3 +1,4 @@
+"use client";
 import { LuSunMedium, LuMoon } from "react-icons/lu";
 
 import useTheme from "@/hooks/useTheme";

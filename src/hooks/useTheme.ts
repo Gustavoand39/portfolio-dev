@@ -1,4 +1,3 @@
-"use client";
 import { useCallback, useEffect, useState } from "react";
 import { Theme, IThemeReturn } from "@/interfaces";
 
@@ -9,7 +8,10 @@ import { Theme, IThemeReturn } from "@/interfaces";
  * @returns {Theme} - Tema guardado o el tema del sistema.
  */
 const getTheme = (): Theme => {
-  const theme = localStorage.getItem("theme") as Theme;
+  let theme: Theme = "system";
+  if (typeof window !== "undefined") {
+    theme = localStorage.getItem("theme") as Theme;
+  }
   return theme ?? "system";
 };
 

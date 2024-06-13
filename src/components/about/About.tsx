@@ -11,7 +11,8 @@ export const About = () => {
           alt="Gustavo Andrade"
           width={384}
           height={384}
-          className="w-96 rounded-lg mask-gradient"
+          className="w-96 h-auto rounded-lg mask-gradient"
+          priority
         />
 
         <div className="flex flex-col items-center md:items-start">
