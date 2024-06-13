@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import daisyui from "daisyui";
 
 const config: Config = {
   content: [
@@ -15,6 +16,23 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    daisyui,
+    ({
+      addUtilities,
+    }: {
+      addUtilities: (utilities: Record<string, any>) => void;
+    }) => {
+      const newUtilities = {
+        ".mask-gradient": {
+          maskImage: "linear-gradient(to bottom, black 95%, transparent)",
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
+  daisyui: {
+    themes: ["light", "dark", "dim", "sunset"],
+  },
 };
 export default config;
