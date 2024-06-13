@@ -1,7 +1,11 @@
+import { Header } from "@/components";
+
 export default function Layout({children}: {children: React.ReactNode}) {
   return (
-    <section>
+    <main>
+      <Header />
+
       {children}
-    </section>
+    </main>
   );
 }
