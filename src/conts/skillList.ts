@@ -12,7 +12,6 @@ export const skillsList: ISkill[] = [
   { key: "node", name: "NodeJS" },
   { key: "express", name: "Express" },
   { key: "mysql", name: "MySQL" },
-  { key: "firebase", name: "Firebase" },
   { key: "git", name: "Git" },
   { key: "github", name: "GitHub" },
 ];

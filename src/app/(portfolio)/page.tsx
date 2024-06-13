@@ -1,4 +1,4 @@
-import { About, Projects, Timeline } from "@/components";
+import { About, Projects, SkillList, Timeline } from "@/components";
 
 export default function HomePage() {
   return (
@@ -8,6 +8,8 @@ export default function HomePage() {
       <Projects />
 
       <Timeline />
+
+      <SkillList />
     </main>
   );
 }

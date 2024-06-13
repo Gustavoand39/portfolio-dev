@@ -9,7 +9,10 @@ export * from "./about/About"
 export * from "./projects/ListProjects"
 export * from "./projects/ProjectCard"
 
+export * from "./tooltip/ToolTip"
+
 export * from "./timeline/Timeline"
 export * from "./timeline/TimelineDate"
 
-export * from "./tooltip/ToolTip"
+export * from "./skills/SkillList"
+export * from "./skills/SkillItem"
