@@ -1,11 +1,13 @@
 "use client";
 
-import React from "react";
-import useActiveSection from "@/hooks/useActiveSection";
-import useScrollDirection from "@/hooks/useScrollDirection";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+
 import MenuMobile from "@/components/header/MenuMobile";
 import MenuDesktop from "@/components/header/MenuDesktop";
 import ThemeSelector from "@/components/header/ThemeSelector";
+import useActiveSection from "@/hooks/useActiveSection";
+import useScrollDirection from "@/hooks/useScrollDirection";
 
 export const Header = () => {
   const { isScrolled, isVisible } = useScrollDirection();
@@ -30,15 +32,15 @@ export const Header = () => {
 
       {/* Icons */}
       <div className="navbar-end flex">
-        <a
+        <Link
           className="text-black/90 dark:text-white p-4"
           href="https://github.com/Gustavoand39"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Perfil de GitHub"
         >
-          {/* <FaGithub size={24} /> */}
-        </a>
+          <FaGithub size={24} />
+        </Link>
 
         <ThemeSelector />
       </div>

@@ -1,9 +1,10 @@
-// import SunIcon from "../../../icons/SunIcon";
-// import MoonIcon from "../../../icons/MoonIcon";
+import { LuSunMedium, LuMoon } from "react-icons/lu";
+
 import useTheme from "@/hooks/useTheme";
 
 const ThemeSelector = () => {
   const { theme, toggleTheme } = useTheme();
+  console.log(theme);
 
   const handleThemeChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     toggleTheme(e.target.checked ? "dark" : "light");
@@ -18,8 +19,8 @@ const ThemeSelector = () => {
         onChange={handleThemeChange}
         aria-label="Cambiar tema"
       />
-      {/* <SunIcon />
-      <MoonIcon /> */}
+      <LuSunMedium size={30} className="swap-off" />
+      <LuMoon size={30} className="swap-on" />
     </label>
   );
 };
