@@ -1,9 +1,9 @@
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p>Holis uwu</p>
+import { About } from "@/components";
 
-      <button className="btn btn-secondary">Button</button>
+export default function HomePage() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <About />
     </main>
   );
 }

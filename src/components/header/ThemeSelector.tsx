@@ -4,7 +4,6 @@ import useTheme from "@/hooks/useTheme";
 
 const ThemeSelector = () => {
   const { theme, toggleTheme } = useTheme();
-  console.log(theme);
 
   const handleThemeChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     toggleTheme(e.target.checked ? "dark" : "light");
