@@ -20,5 +20,4 @@ export * from "./ui/footer/Footer";
 
 export * from "./icon-element/IconElement";
 
-export * from "./projects/slideshow/ProjectMobileSlideShow";
 export * from "./projects/slideshow/ProjectSlideShow";

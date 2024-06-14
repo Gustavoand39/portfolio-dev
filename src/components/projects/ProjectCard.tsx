@@ -24,7 +24,7 @@ export const ProjectCard = ({ project }: Props) => {
         />
       </figure>
 
-      <div className="flex-1 flex flex-col justify-between gap-8 rounded-lg bg-slate-500/50 dark:bg-slate-800/50 opacity-0 hover:opacity-100 p-8 z-10 backdrop-blur-lg transition-all duration-300">
+      <div className="flex-1 flex md:hidden flex-col justify-between gap-8 rounded-lg bg-slate-500/50 dark:bg-slate-800/50 opacity-0 hover:opacity-100 p-8 z-10 backdrop-blur-lg transition-all duration-300">
         <h2 className="card-title text-white opacity-100">{project.title}</h2>
         <p className="text-white">{project.description}</p>
 

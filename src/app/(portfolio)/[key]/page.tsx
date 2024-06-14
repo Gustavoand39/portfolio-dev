@@ -20,11 +20,11 @@ export default function ProjectPage({ params }: Props) {
 
   return (
     <div className="grid grid-cols-5 md:grid-cols-5 items-center gap-6 min-h-screen p-8">
-      <div className="col-span-3 mt-16">
+      <div className="col-span-5 md:col-span-3 mt-16">
         <ProjectSlideShow images={project.image} title={project.title} />
       </div>
 
-      <div className="col-span-2">
+      <div className="col-span-5 md:col-span-2">
         <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
         <p className="whitespace-pre-line">{project.details}</p>
 
