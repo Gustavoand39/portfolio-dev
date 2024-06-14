@@ -22,6 +22,6 @@ export interface IProject {
   title: string;
   description: string;
   details: string;
-  image: string;
+  image: string[];
   technologies: Tech[];
 }
