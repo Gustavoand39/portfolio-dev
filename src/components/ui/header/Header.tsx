@@ -10,7 +10,7 @@ import useActiveSection from "@/hooks/useActiveSection";
 import useScrollDirection from "@/hooks/useScrollDirection";
 
 export const Header = () => {
-  const { isScrolled, isVisible } = useScrollDirection();
+  const { isScrolled } = useScrollDirection();
   const { activeSection } = useActiveSection([
     "home",
     "projects",
@@ -23,8 +23,8 @@ export const Header = () => {
       className={`backdrop-blur-md dark:text-white duration-300 fixed flex items-center navbar py-1 px-2 md:px-20 shadow-sm transition-all w-full z-50 ${
         isScrolled
           ? "bg-white/80 dark:bg-base-300/80 dark:shadow-base-300 shadow-md"
-          : "bg-base-100/90"
-      } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+          : "bg-base-100"
+      }`}
     >
       <MenuMobile activeSection={activeSection} />
 

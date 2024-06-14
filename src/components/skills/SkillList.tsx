@@ -1,6 +1,5 @@
 import { IconElement } from "@/components";
 import { skillsList } from "@/consts";
-import { Tech } from "@/interfaces";
 
 export const SkillList = () => {
   return (
@@ -17,7 +16,7 @@ export const SkillList = () => {
               key={skill.key}
               className="w-full flex flex-col items-center gap-2 bg-base-200 dark:bg-base-300 rounded-lg p-6 cursor-pointer hover:scale-105 transition-all duration-300"
             >
-              <IconElement iconName={skill.key as Tech} />
+              <IconElement iconName={skill.name} />
 
               <p className="text-center text-black/70 font-semibold dark:text-white/90">
                 {skill.name}

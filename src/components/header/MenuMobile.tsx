@@ -1,4 +1,5 @@
-// import { FiMenu } from "react-icons/fi";
+import Link from "next/link";
+import { FiMenu } from "react-icons/fi";
 
 interface MenuMobileProps {
   activeSection: string;
@@ -15,7 +16,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
           className="btn btn-ghost lg:hidden"
           aria-label="Menú"
         >
-          {/* <FiMenu size={20} /> */}
+          <FiMenu size={20} />
         </button>
 
         <ul
@@ -23,45 +24,47 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
           className="bg-base-100 dropdown-content menu menu-sm mt-3 p-2 rounded-box shadow w-52 z-[1]"
         >
           <li>
-            <a
+            <Link
               href="#home"
               className={`btn btn-ghost ${
                 activeSection === "home" ? "text-info" : ""
               }`}
             >
               Inicio
-            </a>
+            </Link>
           </li>
+
           <li>
-            <a
+            <Link
               href="#projects"
               className={`btn btn-ghost ${
                 activeSection === "projects" ? "text-info" : ""
               }`}
             >
               Proyectos
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               href="#experience"
               className={`btn btn-ghost ${
                 activeSection === "experience" ? "text-info" : ""
               }`}
             >
               Experiencia
-            </a>
+            </Link>
           </li>
+
           <li>
-            <a
+            <Link
               href="#skills"
               className={`btn btn-ghost ${
                 activeSection === "skills" ? "text-info" : ""
               }`}
             >
               Habilidades
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

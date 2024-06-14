@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface MenuDesktopProps {
   activeSection: string;
 }
@@ -9,19 +11,20 @@ const MenuDesktop: React.FC<MenuDesktopProps> = ({
     <nav className="flex-1 hidden justify-start lg:flex">
       <ul className="flex gap-4 menu menu-horizontal px-1">
         <li>
-          <a
+          <Link
             href="#home"
-            className={`hover:bg-none text-lg ${
+            className={`text-lg ${
               activeSection === "home"
                 ? "text-info font-semibold"
                 : "font-normal"
             }`}
           >
             Inicio
-          </a>
+          </Link>
         </li>
+
         <li>
-          <a
+          <Link
             href="#projects"
             className={`text-lg ${
               activeSection === "projects"
@@ -30,11 +33,11 @@ const MenuDesktop: React.FC<MenuDesktopProps> = ({
             }`}
           >
             Proyectos
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a
+          <Link
             href="#experience"
             className={`text-lg ${
               activeSection === "experience"
@@ -43,10 +46,11 @@ const MenuDesktop: React.FC<MenuDesktopProps> = ({
             }`}
           >
             Experiencia
-          </a>
+          </Link>
         </li>
+
         <li>
-          <a
+          <Link
             href="#skills"
             className={`text-lg ${
               activeSection === "skills"
@@ -55,7 +59,7 @@ const MenuDesktop: React.FC<MenuDesktopProps> = ({
             }`}
           >
             Habilidades
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
