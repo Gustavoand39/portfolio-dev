@@ -1,5 +1,6 @@
-import { skillsList } from "@/conts";
-import { SkillItem } from "./SkillItem";
+import { IconElement } from "@/components";
+import { skillsList } from "@/consts";
+import { Tech } from "@/interfaces";
 
 export const SkillList = () => {
   return (
@@ -11,7 +12,18 @@ export const SkillList = () => {
 
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 justify-items-center items-center gap-6 p-8">
         {skillsList.map((skill) => {
-          return <SkillItem key={skill.key} skill={skill} />;
+          return (
+            <div
+              key={skill.key}
+              className="w-full flex flex-col items-center gap-2 bg-base-200 dark:bg-base-300 rounded-lg p-6 cursor-pointer hover:scale-105 transition-all duration-300"
+            >
+              <IconElement iconName={skill.key as Tech} />
+
+              <p className="text-center text-black/70 font-semibold dark:text-white/90">
+                {skill.name}
+              </p>
+            </div>
+          );
         })}
       </div>
     </div>

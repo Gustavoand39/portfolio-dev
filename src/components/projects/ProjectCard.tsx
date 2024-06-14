@@ -1,8 +1,7 @@
 import Image from "next/image";
 
 import { IProject } from "@/interfaces";
-import { ToolTip } from "@/components/";
-import { iconList } from "@/conts";
+import { ToolTip, IconElement } from "@/components/";
 
 interface Props {
   project: IProject;
@@ -28,7 +27,7 @@ export const ProjectCard = ({ project }: Props) => {
         <div className="card-actions flex gap-3 justify-end">
           {project.technologies.map((tech) => (
             <ToolTip key={tech} dataTip={tech}>
-              {iconList[tech]}
+              <IconElement iconName={tech} />
             </ToolTip>
           ))}
         </div>

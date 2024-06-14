@@ -1,5 +1,5 @@
 import { ProjectCard } from "./ProjectCard";
-import { projectsList } from "@/conts";
+import { projectsList } from "@/consts";
 
 export const Projects = () => {
   return (

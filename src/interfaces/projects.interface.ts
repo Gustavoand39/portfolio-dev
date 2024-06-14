@@ -9,7 +9,6 @@ export type Tech =
   | "react"
   | "node"
   | "mysql"
-  | "firebase"
   | "express"
   | "socket"
   | "git"

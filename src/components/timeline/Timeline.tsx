@@ -1,5 +1,5 @@
 import { TimelineDate } from "./TimelineDate";
-import { timelineData } from "@/conts";
+import { timelineData } from "@/consts";
 import { ITimeline } from "@/interfaces";
 
 export const Timeline = () => {
