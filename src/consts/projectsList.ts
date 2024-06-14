@@ -76,11 +76,12 @@ export const projectsList: IProject[] = [
       "Aplicación móvil para visualización de imágenes de la NASA. Muestra la imagen del día y las últimas 5 imágenes.",
     details:
       "Esta aplicación móvil fue desarrollada con fines de aprendizaje de React Native. " +
-      "Muestra la imagen del día y las últimas 5 imágenes de la NASA, obtenidas de la API de la NASA. ",
+      "Muestra la imagen del día y las últimas 5 imágenes de la NASA, obtenidas de la API de la NASA.\n\n" +
+      "Puedes ir al repositorio para observar mejor el proyecto.",
 
     image: [
       "/images/nasa/nasa-home.webp",
-      "/images/nasa/nasa-lastImg.webp",
+      "/images/nasa/nasa-card.webp",
       "/images/nasa/nasa-details.webp",
     ],
     technologies: ["React Native", "TypeScript"],

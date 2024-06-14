@@ -40,7 +40,7 @@ export const ProjectSlideShow = ({ images, title, className }: Props) => {
               height={1500}
               src={image}
               alt={title}
-              className="h-full rounded-lg border border-base-200"
+              className="rounded-xl border border-base-200"
               priority
             />
           </SwiperSlide>
