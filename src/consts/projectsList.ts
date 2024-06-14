@@ -18,14 +18,14 @@ export const projectsList: IProject[] = [
     technologies: ["React", "Tailwind", "TypeScript", "MySQL", "Express"],
   },
   {
-    key: "Teslo Shop",
+    key: "TesloShop",
     title: "Teslo Shop",
     description: "Aplicación web que simula la E-commerce de Tesla.",
     image: "",
     technologies: ["NextJs", "Tailwind", "TypeScript"],
   },
   {
-    key: "spotify-clone",
+    key: "spotifyClone",
     title: "Spotify Clone",
     description:
       "Aplicación web que simula la interfaz de Spotify. Incluye reproducción de música.",
@@ -33,7 +33,7 @@ export const projectsList: IProject[] = [
     technologies: ["Astro", "TypeScript", "Tailwind"],
   },
   {
-    key: "Nasa App",
+    key: "NasaApp",
     title: "Nasa App",
     description:
       "Aplicación móvil para visualización de imágenes de la NASA. Muestra la imagen del día y las últimas 5 imágenes.",

@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { IProject } from "@/interfaces";
 import { ToolTip, IconElement } from "@/components/";
+import Link from "next/link";
 
 interface Props {
   project: IProject;
@@ -9,7 +10,10 @@ interface Props {
 
 export const ProjectCard = ({ project }: Props) => {
   return (
-    <div className="w-full md:h-full card bg-base-100 shadow-xl dark:shadow-neutral-800 scale-95 hover:scale-100 transition-all duration-300 cursor-pointer">
+    <Link
+      href={`/${project.key}`}
+      className="w-full md:h-full card bg-base-100 shadow-xl dark:shadow-neutral-800 scale-95 hover:scale-100 transition-all duration-300 cursor-pointer"
+    >
       <figure className="w-full h-full rounded-lg absolute">
         <Image
           className="w-full h-full rounded-lg object-cover object-center"
@@ -32,6 +36,6 @@ export const ProjectCard = ({ project }: Props) => {
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
