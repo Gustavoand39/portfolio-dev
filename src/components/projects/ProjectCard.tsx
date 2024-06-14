@@ -16,11 +16,11 @@ export const ProjectCard = ({ project }: Props) => {
     >
       <figure className="w-full h-full rounded-lg absolute">
         <Image
-          className="w-full h-full rounded-lg object-cover object-center"
+          className="h-full rounded-lg object-cover object-center"
           src={project.image[0]}
           alt={project.title}
-          height={1000}
-          width={1000}
+          height={1200}
+          width={1200}
         />
       </figure>
 

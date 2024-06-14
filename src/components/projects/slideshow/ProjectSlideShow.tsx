@@ -1,9 +1,8 @@
 "use client";
-import React, { useState } from "react";
+
 import Image from "next/image";
-import { Swiper as SwiperObject } from "swiper";
 import { SwiperSlide, Swiper } from "swiper/react";
-import { Autoplay, FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -19,8 +18,6 @@ interface Props {
 }
 
 export const ProjectSlideShow = ({ images, title, className }: Props) => {
-  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperObject>();
-
   return (
     <div className={className}>
       <Swiper
@@ -32,41 +29,19 @@ export const ProjectSlideShow = ({ images, title, className }: Props) => {
         }
         spaceBetween={10}
         navigation={true}
-        autoplay={{ delay: 3000 }}
-        thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs, Autoplay]}
+        autoplay={{ delay: 5000 }}
+        modules={[FreeMode, Navigation, Autoplay]}
         className="mySwiper2"
       >
         {images.map((image) => (
-          <SwiperSlide key={image}>
+          <SwiperSlide key={image} className="rounded-lg">
             <Image
-              width={1024}
-              height={800}
+              width={1500}
+              height={1500}
               src={image}
               alt={title}
-              className="rounded-lg object-fill"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        spaceBetween={10}
-        slidesPerView={4}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
-      >
-        {images.map((image) => (
-          <SwiperSlide key={image}>
-            <Image
-              width={1024}
-              height={800}
-              src={image}
-              alt={title}
-              className="rounded-lg object-fill"
+              className="h-full rounded-lg border border-base-200"
+              priority
             />
           </SwiperSlide>
         ))}

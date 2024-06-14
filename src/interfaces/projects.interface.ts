@@ -24,4 +24,5 @@ export interface IProject {
   details: string;
   image: string[];
   technologies: Tech[];
+  repo?: string;
 }

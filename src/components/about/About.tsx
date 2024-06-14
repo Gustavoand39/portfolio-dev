@@ -9,8 +9,8 @@ export const About = () => {
         <Image
           src="/images/profile.webp"
           alt="Gustavo Andrade"
-          width={384}
-          height={384}
+          width={1000}
+          height={1000}
           className="w-96 h-auto rounded-lg mask-gradient"
           priority
         />
