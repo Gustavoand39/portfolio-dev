@@ -1,18 +1,21 @@
 export type Tech =
-  | "html5"
-  | "css3"
-  | "sass"
-  | "bootstrap"
-  | "tailwind"
-  | "javascript"
-  | "typescript"
-  | "react"
-  | "node"
-  | "mysql"
-  | "express"
-  | "socket"
-  | "git"
-  | "github";
+  | "Html5"
+  | "Css3"
+  | "Sass"
+  | "Bootstrap"
+  | "Tailwind"
+  | "JavaScript"
+  | "TypeScript"
+  | "React"
+  | "React Native"
+  | "NextJs"
+  | "Node JS"
+  | "MySQL"
+  | "Express"
+  | "Socket"
+  | "Git"
+  | "GitHub"
+  | "Astro";
 
 export interface IProject {
   key: string;
