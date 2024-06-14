@@ -25,7 +25,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
         >
           <li>
             <Link
-              href="#home"
+              href="/#home"
               className={`btn btn-ghost ${
                 activeSection === "home" ? "text-info" : ""
               }`}
@@ -36,7 +36,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
 
           <li>
             <Link
-              href="#projects"
+              href="/#projects"
               className={`btn btn-ghost ${
                 activeSection === "projects" ? "text-info" : ""
               }`}
@@ -47,7 +47,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
 
           <li>
             <Link
-              href="#experience"
+              href="/#experience"
               className={`btn btn-ghost ${
                 activeSection === "experience" ? "text-info" : ""
               }`}
@@ -58,7 +58,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
 
           <li>
             <Link
-              href="#skills"
+              href="/#skills"
               className={`btn btn-ghost ${
                 activeSection === "skills" ? "text-info" : ""
               }`}
