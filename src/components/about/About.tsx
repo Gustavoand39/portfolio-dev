@@ -20,13 +20,13 @@ export const About = () => {
             ¡Hey! Soy Gustavo Andrade
           </h3>
 
-          <p className="w-full md:w-[80%] py-6 text-lg text-center md:text-start text-balance">
+          <p className="w-full md:w-[80%] py-6 text-xl text-center md:text-start">
             Actualmente estoy por concluir mi carrera en{" "}
-            <span className="font-semibold text-orange-600 dark:text-green-300">
+            <span className="font-bold text-orange-500 dark:text-green-300">
               Ingeniería en Sistemas Computacionales
             </span>
             . Mi enfoque principal es el{" "}
-            <span className="font-semibold text-orange-600 dark:text-green-300">
+            <span className="font-bold text-orange-500 dark:text-green-300">
               desarrollo web
             </span>
             . Me apasiona aprender nuevas tecnologías y mejorar mis habilidades
@@ -34,7 +34,7 @@ export const About = () => {
           </p>
 
           <Link
-            className="w-32 btn text-white bg-orange-500 dark:btn dark:btn-primary"
+            className="w-36 btn font-semibold text-white text-lg bg-orange-500 dark:btn dark:btn-primary"
             href="/files/Gustavo Alonso - CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
